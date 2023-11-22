@@ -4,7 +4,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
 import 'package:urban_hive_seller/core/core_provider.dart';
 import 'package:urban_hive_seller/core/home_screen.dart';
-import 'package:urban_hive_seller/customization/providers/customization.dart';
 
 import 'package:urban_hive_seller/inventory/provider/image.dart';
 import 'package:urban_hive_seller/inventory/provider/inventory_provider.dart';
@@ -43,7 +42,6 @@ class MyApp extends StatelessWidget {
               return InventoryProvider();
             }),
             ChangeNotifierProvider(create: (context) => image()),
-            ChangeNotifierProvider(create: (context) => customisation())
           ],
           child: const MaterialApp(
             debugShowCheckedModeBanner: false,
